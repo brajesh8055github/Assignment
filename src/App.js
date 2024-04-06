@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Eq from './components/Eq';
+import Eqiq from './components/Eqiq';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Improvement from './components/Improvement';
+import Meet from './components/Meet';
+import Navbar from './components/Navbar';
+import Socialskills from './components/Socialskills';
+import Soundcard from './components/Soundcard';
+import Start from './components/Start';
+import Vacancies from './components/Vacancies';
+import Work from './components/Work';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Hero/>
+      <Eq />
+      <Soundcard />
+      <Meet/>
+      <Improvement/>
+      <Eqiq/>
+      <Socialskills/>
+      <Start/>
+      <Work/>
+      <Vacancies/>
+      <Footer/>
+    </>
   );
 }
 

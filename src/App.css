@@ -1,38 +1,567 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0px auto;
+  background: #ffffff;
+}
+
+/*---------------------------------------------------------- Navbar--------------------------------------------------------------------------- */
+
+.logo {
+  width: 40px;
+
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.btn-n {
+  padding: 8px 12px;
+  margin-right: 2px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 1s background-color;
+
+}
+
+.btn-n:hover {
+  background-color: #202020;
+}
+
+/*--------------------------------------------------------------------- Hero ---------------------------------------------------------*/
+.hero-hero {
+  background: #e8d9ff91;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.hero-hero img {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+  border-radius: 5px;
+}
+
+.hero-hero .left {
+  max-width: 48%;
+}
+
+.hero-hero .left h1 {
+  font-size: 50px;
+}
+
+.hero-hero .right {
+  max-width: 48%;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  max-width: 350px;
+}
+
+/*------------------------------------------------------------------- Vacancies ----------------------------------------------------------------*/
+.vacancies {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  padding: 40px 20px;
+  background-color: #faf4c477;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.card:hover {
+  background: #ffec5f77;
+}
+
+/*----------------------------------------------------------- Work------------------------------------------------------------------------------ */
+.work {
+  background: #d4d4ff5c;
+  display: flex;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.work .right {
+  padding: 0 10px;
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.work .right::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bb55ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+.work-card-l {
+  padding: 40px 20px;
+  border-radius: 20px 20px 0 0;
+  /* margin: 5px; */
+  background: #fff;
+}
+
+.work-card-r {
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  background: #fff;
+}
+
+/* -----------------------------------------------------------Footer----------------------------------------------------------------------------- */
+.footer-w {
+  border-top: 1px solid rgb(218, 218, 218);
+  padding: 40px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-flex p {
+  margin: 0;
+}
+
+.footer-flex i {
+  padding: 4px 7px;
+  border-radius: 50%;
+  background: #1cffacbe;
+  margin-right: 5px;
+}
+
+/*------------------------------------------------------------------ Start-------------------------------------------------------------------- */
+.start {
+  padding: 40px 0;
+  margin: 40px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*------------------------------------------------------------------- Sound-------------------------------------------------------------------- */
+.sound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sound-card {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sound p {
+  font-size: 11px;
+}
+
+span {
+  font-size: 25px;
+}
+
+.test {
+  background: rgb(255, 253, 188);
+}
+
+/*---------------------------------------------------------------- Improvement------------------------------------------------------------------ */
+.improvement {
+  padding: 40px;
+  margin: 40px 0;
+
+}
+
+.track {
+  border-left: 2px solid rgb(138, 87, 255);
+  margin-left: 20%;
+
+}
+
+.track-status {
+  padding: 0 15px 15px 15px;
+}
+
+/*------------------------------------------------------------------ EqIq---------------------------------------------------------------------- */
+.eqiq {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.eqiq-card {
+  max-width: 33%;
+  padding: 20px;
+
+}
+
+/*-------------------------------------------------------------------- Meet--------------------------------------------------------------------- */
+.meet {
+  background: #faf4c477;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.meet .left {
+  max-width: 48%;
+}
+
+.meet .right {
+  max-width: 48%;
+}
+
+.meet .left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.meet-img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+
+
+}
+
+/*---------------------------------------------------------------------- Scoial-Skills---------------------------------------------------------- */
+.social-skills {
+  background: #d9f5ff83;
+  padding: 40px 0;
+  margin: 40px 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.menu-track small {
+  padding: 5px 12px;
+  border-radius: 50%;
+  color: #fff;
+  background: #ff9811;
+
+}
+
+.menu-track-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-track-card {
+  max-width: 300px;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.step-wizard {
+  max-width: 700px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.step-wizard-list {
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  color: #333;
+  list-style-type: none;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.step-wizard-item {
+  padding: 0 20px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  max-width: 170px;
+  position: relative;
+}
+
+.step-wizard-item+.step-wizard-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 19px;
+  background: #21d4fd;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+
+.progress-count {
+  height: 40px;
+  width: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.progress-count:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #21d4fd;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.progress-label {
+  font-size: 14px;
+}
+
+.current-item .progress-count {
+  color: #21d4fd;
+}
+
+/*-------------------------------------------------------------- Media Querry-------------------------------------------------------------------- */
+
+
+@media (max-width:1000px) {
+  .hero {
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media (max-width:600px) {
+  .work {
+    display: block;
+  }
+}
+
+@media (max-width:690px) {
+  .sound {
+    display: block;
+    padding: 40px 0;
+
+  }
+}
+
+@media (max-width:550px) {
+  .meet {
+    background: #faf4c477;
+    padding: 40px;
+    display: block;
+    margin: 40px 0;
+  }
+
+  .meet .left {
+    max-width: 100%;
+  }
+
+  .meet .right {
+    max-width: 100%;
+  }
+
+  .eqiq {
+    display: block;
+    padding: 40px;
+  }
+
+  .eqiq-card {
+    max-width: 100%;
+    padding: 20px;
+
+  }
+}
+
+@media (max-width:790px) {
+  .hero-hero {
+    background: #e8d9ff91;
+    padding: 40px;
+    display: block;
+    text-align: center;
+  }
+
+  .hero-hero .left {
+    max-width: 100%;
+  }
+
+  .hero-hero .left h1 {
+    font-size: 40px;
+  }
+
+  .hero-hero .right {
+    max-width: 100%;
+  }
+
+  .hero-flex {
+    justify-content: center;
+  }
+
+  .rating {
+    max-width: 100%;
+
+  }
+}
+
+@media (max-width:400px) {
+  .hero-hero .left h1 {
+    font-size: 30px;
+  }
+
+  .hero-flex {
+    display: block;
+    justify-content: center;
+
+  }
+
+  .menu-track-flex {
+    display: block;
+  }
+
+}
+
+@media (max-width:790px) {
+  .hero-hero img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width:335px) {
+  .navbar .btn-n {
+    display: none;
+  }
+}
+
+@media (max-width:360px) {
+  .hero-hero img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width:720px) {
+
+  .step-wizard-item {
+    display: block;
+  }
+
+  .step-wizard-item+.step-wizard-item:after {
+    transform: translateX(-40%);
+  }
+}
+
+@media (max-width:500px) {
+  .footer {
+    display: block;
+
+  }
+
+  .footer-flex {
+    display: block;
+    margin: 5px 0;
+
+  }
+}
+
+@media (max-width:555px) {
+
+  .step-wizard-item {
+    display: none;
+  }
+
+  .step-wizard-list {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width:900px) {
+  .vacancies {
+    display: block;
   }
 }
